@@ -1,0 +1,58 @@
+Display a list of progressive web apps.
+Allow users to access them and rate them.
+During rating, capture device or allow dropdown of device based on rating
+	- This is so ratings reflect device support
+	- Perhaps part of review, allow rating based on how well app worked
+		- "Worked Beautifully"
+		- "Minor Bugs"
+		- "Major Bugs"
+		- "Complete crashing or not a PWA"
+There wouldn't really be versioning of a PWA, so maybe allow filtering of ratings by date (last 90 days)
+Initially I would be supplying the data (similar to pwa.rocks).
+Store in a local database (nosql or sql)
+Backend would provide feeds
+App should be PWA as well
+Allow filtering based on name and current browser support
+Allow people to claim a PWA to manage it
+	- Display an "author" if someone claimed PWA. Leave blank otherwise
+
+
+Backend service
+	- feeds
+	- authentication/authorization
+
+Screens:
+	- "Welcome screen"
+		- Display a list of top rated apps, most recent apps, etc.
+		- Tapping any app links to "PWApp screen"
+	- "PWApp screen"
+		- Screenshot of page (allow customization)
+		- Description
+		- Compatibility with current phone
+			- Based on reviews? Or based on phone detection
+		- Display reviews
+			- Overall reviews
+			- Last 90 days reviews
+		- Comments
+	- "Search screen"
+		- List of PWAs based on string filter, matching title or description Initially
+		- Tapping result links to "PWApp screen"
+	
+
+Components Screen Model
+	- "Welcome screen"
+		App List (horizontal)
+	- "PWApp screen"
+		App Listing
+			Comment[]
+	- "Search screen"
+		App List (vertical)
+			App List Item[]
+
+
+Services:
+	pwa
+
+
+Model:
+	pwa
