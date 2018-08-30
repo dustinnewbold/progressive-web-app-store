@@ -8,12 +8,12 @@ import { AppListItemComponent } from './app-list/app-list-item/app-list-item.com
 import { PWAService } from './pwa.service';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    HttpClientModule,
-    PWARoutingModule
-  ],
-  declarations: [AppListComponent, AppListItemComponent],
-  providers: [PWAService]
+	imports: [
+		CommonModule,
+		HttpClientModule,
+		PWARoutingModule
+	],
+	declarations: [AppListComponent, AppListItemComponent],
+	providers: [PWAService]
 })
 export class PWAModule { }
